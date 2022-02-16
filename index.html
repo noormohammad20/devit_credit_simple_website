@@ -6,12 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>debit-credit</title>
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="text-center text-5xl font-bold text-orange-400 pt-4">Debit-Credit &dollar; </h1>
 
+    </header>
+    <main class="container mx-auto bg-slate-200">
+
+        <div class="grid md:grid-cols-2 gap-7 mt-10">
+            <div>
+                <img src="/images/debit-credit.jpg" alt="">
+            </div>
+            <div class="text-center">
+                <!-- income  -->
+                <h4 class="text-lg my-5 font-bold">Income</h4>
+                <label for="income">Income:</label>
+                <input id="income" type="text" value="10000">
+                <!-- food -->
+                <h4 class="text-lg my-5 font-bold">Expenses</h4>
+                <label for="food">Food:</label>
+                <input id="food" type="text" value="3000">
+                <br>
+                <!-- rent  -->
+                <label for="rent">Rent:</label>
+                <input class="my-4" id="rent" type="text" value="2000">
+                <br>
+                <!-- clothes -->
+                <label for="clothes">Clothes:</label>
+                <input id="clothes" type="text" value="500">
+                <br>
+                <!-- calculate-btn -->
+                <button id="calculate-btn"
+                    class="uppercase rounded-lg bg-emerald-400 py-2 px-4 my-4 text-white font-semibold">
+                    Calculate</button>
+                <!-- expense-amount -->
+                <p class="font-semibold">Total Expense:<span id="expense-amount">5500</span></p>
+                <!-- balance  -->
+                <p class="my-3 font-semibold">Balance:<span id="banance">4500</span> </p>
+                <!-- save  -->
+                <div>
+                    <span>save:</span>
+                    <input type="text" value="20">
+                    <span>%</span>
+                    <button
+                        class="uppercase rounded-xl bg-emerald-400 py-2 px-5 my-4 text-white font-semibold">save</button>
+                </div>
+                <!-- saving-amount  -->
+                <p class="font-semibold">Saving Amount: <span id="saving-amount">2000</span> </p>
+                <!-- Remaining balance -->
+                <p class="my-3 font-semibold">Remaining Balance: <span id="Remaining Balance">2500</span> </p>
+            </div>
+
+        </div>
+
+
+    </main>
 
     <!-- javascript link  -->
     <script src="js/index.js"></script>
