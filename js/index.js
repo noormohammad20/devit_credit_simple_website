@@ -5,25 +5,21 @@ function getInputValue(input) {
 
 }
 
-function getInnerText(innerText) {
-    const innerTextId = document.getElementById(innerText)
-    const innerTextValue = Number(innerTextId.innerText)
-    return innerTextValue
-}
-
-
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const incomeInput = getInputValue('income-input')
+
 
     const foodInput = getInputValue('food-input')
     const rentInput = getInputValue('rent-input')
     const clothesInput = getInputValue('clothes-input')
 
+    // calculation 
+
     const expenses = foodInput + rentInput + clothesInput;
+    document.getElementById('expense-amount').innerText = expenses
 
-    const balance = incomeInput - expenses
-
-
-
+    const totalBalance = incomeInput - expenses;
+    document.getElementById('balance-amount').innerText = totalBalance;
 })
+
