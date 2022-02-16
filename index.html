@@ -9,6 +9,8 @@
 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,29 +18,29 @@
         <h1 class="text-center text-5xl font-bold text-orange-400 pt-4">Debit-Credit &dollar; </h1>
 
     </header>
-    <main class="container mx-auto bg-slate-200">
+    <main class="container mx-auto mb-4">
 
-        <div class="grid md:grid-cols-2 gap-7 mt-10">
+        <div class="grid gap-x-12 md:grid-cols-2 mt-10">
             <div>
-                <img src="/images/debit-credit.jpg" alt="">
+                <img class="img" src="/images/debit-credit.jpg" alt="">
             </div>
-            <div class="text-center">
+            <div class="text-center  bg-slate-200">
                 <!-- income  -->
                 <h4 class="text-lg my-5 font-bold">Income</h4>
                 <label for="income">Income:</label>
-                <input id="income" type="text" value="10000">
+                <input id="income-input" type="number" value="10000">
                 <!-- food -->
                 <h4 class="text-lg my-5 font-bold">Expenses</h4>
                 <label for="food">Food:</label>
-                <input id="food" type="text" value="3000">
+                <input id="food-input" type="number" value="3000">
                 <br>
                 <!-- rent  -->
                 <label for="rent">Rent:</label>
-                <input class="my-4" id="rent" type="text" value="2000">
+                <input class="my-4" id="rent-input" type="number" value="2000">
                 <br>
                 <!-- clothes -->
                 <label for="clothes">Clothes:</label>
-                <input id="clothes" type="text" value="500">
+                <input id="clothes-input" type="number" value="500">
                 <br>
                 <!-- calculate-btn -->
                 <button id="calculate-btn"
@@ -51,10 +53,10 @@
                 <!-- save  -->
                 <div>
                     <span>save:</span>
-                    <input type="text" value="20">
+                    <input class="input" type="number" value="20">
                     <span>%</span>
                     <button
-                        class="uppercase rounded-xl bg-emerald-400 py-2 px-5 my-4 text-white font-semibold">save</button>
+                        class="uppercase rounded-xl bg-emerald-400 py-1 px-3 my-4 text-white font-semibold">save</button>
                 </div>
                 <!-- saving-amount  -->
                 <p class="font-semibold">Saving Amount: <span id="saving-amount">2000</span> </p>
