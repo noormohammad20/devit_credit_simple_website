@@ -35,6 +35,10 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
             document.getElementById('balance-amount').innerText = totalBalance;
         }
     }
+    document.getElementById('income-input').value = '';
+    document.getElementById('food-input').value = '';
+    document.getElementById('rent-input').value = '';
+    document.getElementById('clothes-input').value = '';
 })
 
 // save button function
@@ -64,6 +68,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
             document.getElementById('remaining-balance').innerText = balance;
         }
     }
+    document.getElementById('saving-input').value = ''
 })
 
 
